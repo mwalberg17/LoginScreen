@@ -66,7 +66,7 @@ namespace LoginScreen
             // 
             this.uxUsernameTextbox.Font = new System.Drawing.Font("Myanmar Text", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uxUsernameTextbox.Location = new System.Drawing.Point(88, 40);
-            this.uxUsernameTextbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.uxUsernameTextbox.Margin = new System.Windows.Forms.Padding(2);
             this.uxUsernameTextbox.Name = "uxUsernameTextbox";
             this.uxUsernameTextbox.Size = new System.Drawing.Size(128, 28);
             this.uxUsernameTextbox.TabIndex = 2;
@@ -76,7 +76,7 @@ namespace LoginScreen
             this.uxPasswordTextbox.ContextMenuStrip = this.contextMenuStrip1;
             this.uxPasswordTextbox.Font = new System.Drawing.Font("Myanmar Text", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uxPasswordTextbox.Location = new System.Drawing.Point(88, 76);
-            this.uxPasswordTextbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.uxPasswordTextbox.Margin = new System.Windows.Forms.Padding(2);
             this.uxPasswordTextbox.Name = "uxPasswordTextbox";
             this.uxPasswordTextbox.PasswordChar = '*';
             this.uxPasswordTextbox.ShortcutsEnabled = false;
@@ -96,7 +96,7 @@ namespace LoginScreen
             this.uxSubmitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.uxSubmitBtn.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uxSubmitBtn.Location = new System.Drawing.Point(25, 115);
-            this.uxSubmitBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.uxSubmitBtn.Margin = new System.Windows.Forms.Padding(2);
             this.uxSubmitBtn.Name = "uxSubmitBtn";
             this.uxSubmitBtn.Size = new System.Drawing.Size(88, 58);
             this.uxSubmitBtn.TabIndex = 4;
@@ -111,7 +111,7 @@ namespace LoginScreen
             this.uxExitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.uxExitBtn.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uxExitBtn.Location = new System.Drawing.Point(128, 115);
-            this.uxExitBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.uxExitBtn.Margin = new System.Windows.Forms.Padding(2);
             this.uxExitBtn.Name = "uxExitBtn";
             this.uxExitBtn.Size = new System.Drawing.Size(88, 58);
             this.uxExitBtn.TabIndex = 5;
@@ -142,8 +142,9 @@ namespace LoginScreen
             this.Controls.Add(this.uxUsernameTextbox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "LoginFrm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "K-State Login";
             this.ResumeLayout(false);
             this.PerformLayout();

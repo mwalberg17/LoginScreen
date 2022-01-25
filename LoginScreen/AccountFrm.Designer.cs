@@ -43,10 +43,9 @@ namespace LoginScreen
             this.uxBackBtn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.uxBackBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.uxBackBtn.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxBackBtn.Location = new System.Drawing.Point(13, 439);
-            this.uxBackBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uxBackBtn.Location = new System.Drawing.Point(10, 357);
             this.uxBackBtn.Name = "uxBackBtn";
-            this.uxBackBtn.Size = new System.Drawing.Size(554, 71);
+            this.uxBackBtn.Size = new System.Drawing.Size(416, 58);
             this.uxBackBtn.TabIndex = 1;
             this.uxBackBtn.Text = "Back";
             this.uxBackBtn.UseVisualStyleBackColor = false;
@@ -58,10 +57,9 @@ namespace LoginScreen
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(13, 14);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Location = new System.Drawing.Point(10, 11);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(554, 71);
+            this.button1.Size = new System.Drawing.Size(416, 58);
             this.button1.TabIndex = 2;
             this.button1.Text = "Account Information";
             this.button1.UseVisualStyleBackColor = false;
@@ -72,10 +70,9 @@ namespace LoginScreen
             this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(13, 184);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Location = new System.Drawing.Point(10, 150);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(554, 71);
+            this.button2.Size = new System.Drawing.Size(416, 58);
             this.button2.TabIndex = 3;
             this.button2.Text = "Manage Tickets";
             this.button2.UseVisualStyleBackColor = false;
@@ -86,10 +83,9 @@ namespace LoginScreen
             this.button3.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(13, 99);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
+            this.button3.Location = new System.Drawing.Point(10, 80);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(554, 71);
+            this.button3.Size = new System.Drawing.Size(416, 58);
             this.button3.TabIndex = 4;
             this.button3.Text = "Edit Account Information";
             this.button3.UseVisualStyleBackColor = false;
@@ -100,10 +96,9 @@ namespace LoginScreen
             this.button4.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(13, 269);
-            this.button4.Margin = new System.Windows.Forms.Padding(4);
+            this.button4.Location = new System.Drawing.Point(10, 219);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(554, 71);
+            this.button4.Size = new System.Drawing.Size(416, 58);
             this.button4.TabIndex = 5;
             this.button4.Text = "Sports Notifications";
             this.button4.UseVisualStyleBackColor = false;
@@ -114,28 +109,27 @@ namespace LoginScreen
             this.button5.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(13, 354);
-            this.button5.Margin = new System.Windows.Forms.Padding(4);
+            this.button5.Location = new System.Drawing.Point(10, 288);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(554, 71);
+            this.button5.Size = new System.Drawing.Size(416, 58);
             this.button5.TabIndex = 6;
             this.button5.Text = "Sign Out";
             this.button5.UseVisualStyleBackColor = false;
             // 
             // AccountFrm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(106)))), ((int)(((byte)(230)))));
-            this.ClientSize = new System.Drawing.Size(580, 524);
+            this.ClientSize = new System.Drawing.Size(435, 426);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.uxBackBtn);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "AccountFrm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Account ";
             this.ResumeLayout(false);
 

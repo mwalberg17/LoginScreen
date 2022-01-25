@@ -70,18 +70,18 @@ namespace LoginScreen
                         // Failed third attempt. Lock the account for
                         if (failedAttempts == 3)
                         {
-                            MessageBox.Show("Invalid login attempt. Account has been locked for an additional 30 seconds.");
+                            MessageBox.Show("Invalid login attempt. Account has been locked for an additional 10 seconds.");
 
                             // Record time 30 seconds into the future for later calculations
-                            lockTime = DateTime.Now.AddSeconds(30);
+                            lockTime = DateTime.Now.AddSeconds(10);
                         }
                         else if (failedAttempts == 2)
                         {
                             failedAttempts++;
-                            MessageBox.Show("Maximum attempts reached. Account has been locked for 30 seconds.");
+                            MessageBox.Show("Maximum attempts reached. Account has been locked for 10 seconds.");
 
                             // Record time 30 seconds into the future for later calculations
-                            lockTime = DateTime.Now.AddSeconds(30);
+                            lockTime = DateTime.Now.AddSeconds(10);
                         }
                         else
                         {

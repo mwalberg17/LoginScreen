@@ -160,6 +160,7 @@ namespace LoginScreen
             this.Controls.Add(this.uxNewsBtn);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MainFrm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home Page";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainFrm_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.uxSettingsPicbox)).EndInit();
