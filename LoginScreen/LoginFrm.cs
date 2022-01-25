@@ -24,7 +24,7 @@ namespace LoginScreen
         string validUsername = "admin";  // Hard coded valid username
         string validPassword = "12345";  // Hard coded valid password
         int failedAttempts = 0;          // Counter to keep track of failed login attempts
-        DateTime lockTime;
+        DateTime lockTime;               // DateTime variable to hold time when login is available again.
 
         private void uxSubmitBtn_Click(object sender, EventArgs e)
         {
@@ -41,19 +41,60 @@ namespace LoginScreen
                     if (failedAttempts == 3)
                     {
                         // Compares lockTime with current time. If true, account is no longer locked
-                        if (DateTime.Compare(lockTime, DateTime.Now) <= 0)
-                        {
-                            // Continue with password. NEED TO FIX
-                            MessageBox.Show("Login confirmed.");
-                        }
-                        else
+                        if (DateTime.Compare(lockTime, DateTime.Now) > 0)
                         {
                             //lockTime = DateTime.Now.AddSeconds(30);
                             MessageBox.Show("Account is locked. Please try again later.");
                             return;
                         }
+                        else
+                        {
+                            // Continue with password. NEED TO FIX
+                            MessageBox.Show("Login confirmed.");
+                        }
                     }
-                    // 
+                    // Check if the password matches with the username in our records
+                    if (password == validPassword)
+                    {
+                        // Reset failedAttempts to 0 & lockTime to null
+                        failedAttempts = 0;
+
+                        // On success, load main form/display it and close the login form
+                        MainFrm frmMain = new MainFrm();
+                        frmMain.Show();
+                        this.Close();
+                    }
+                    // Password is not valid
+                    else
+                    {
+                        // Failed third attempt. Lock the account for
+                        if (failedAttempts == 3)
+                        {
+                            failedAttempts++;
+                            MessageBox.Show("Invalid login attempt. Account has been locked for 30 seconds.");
+
+                            // Record time 30 seconds into the future for later calculations
+                            lockTime = DateTime.Now.AddSeconds(30);
+                        }
+                        else if (failedAttempts == 2)
+                        {
+                            failedAttempts++;
+                            MessageBox.Show("Maximum attempts reached. Account has been locked for 30 seconds.");
+
+                            // Record time 30 seconds into the future for later calculations
+                            lockTime = DateTime.Now.AddSeconds(30);
+                        }
+                        else
+                        {
+                            failedAttempts++;
+                            MessageBox.Show("Invalid login attempt. Please try again.");
+                        }
+
+                    }
+
+
+
+                    /**
                     else
                     {
                         // Check if the password matches with the username in our records
@@ -87,6 +128,7 @@ namespace LoginScreen
 
                         }
                     }
+                    **/
                 }
                 // Username does not exist
                 else
@@ -95,7 +137,7 @@ namespace LoginScreen
                 }
 
 
-                // if the username and password match the hardcoded values we have chosen for the time being
+                /** if the username and password match the hardcoded values we have chosen for the time being
                 if (username == validUsername && password == validPassword)
                 {
                     
@@ -110,7 +152,7 @@ namespace LoginScreen
                 {
                     // On failure, increment failedAttempts
 
-                }
+                }**/
 
 
 

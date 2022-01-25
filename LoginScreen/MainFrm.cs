@@ -17,5 +17,9 @@ namespace LoginScreen
             InitializeComponent();
         }
 
-	}
+        private void MainFrm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+    }
 }
