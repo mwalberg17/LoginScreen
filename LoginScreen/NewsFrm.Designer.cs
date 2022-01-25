@@ -41,10 +41,9 @@ namespace LoginScreen
             this.uxBackBtn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.uxBackBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.uxBackBtn.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxBackBtn.Location = new System.Drawing.Point(17, 471);
-            this.uxBackBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uxBackBtn.Location = new System.Drawing.Point(13, 383);
             this.uxBackBtn.Name = "uxBackBtn";
-            this.uxBackBtn.Size = new System.Drawing.Size(546, 50);
+            this.uxBackBtn.Size = new System.Drawing.Size(410, 36);
             this.uxBackBtn.TabIndex = 1;
             this.uxBackBtn.Text = "Back";
             this.uxBackBtn.UseVisualStyleBackColor = false;
@@ -54,22 +53,22 @@ namespace LoginScreen
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-15, -10);
+            this.pictureBox1.Location = new System.Drawing.Point(-11, -8);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(610, 474);
+            this.pictureBox1.Size = new System.Drawing.Size(458, 385);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
             // NewsFrm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(106)))), ((int)(((byte)(230)))));
-            this.ClientSize = new System.Drawing.Size(580, 524);
+            this.ClientSize = new System.Drawing.Size(435, 426);
             this.Controls.Add(this.uxBackBtn);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "NewsFrm";
             this.Text = "News";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
