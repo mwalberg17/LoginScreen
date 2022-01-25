@@ -1,4 +1,8 @@
-﻿using System;
+﻿// LoginFrm.cs
+// MIS 677
+// 
+// Authors: Matthew Walberg, Alex Anderson, Karl Burg, Rob Kaufman, Mike Hewko
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -38,19 +42,15 @@ namespace LoginScreen
                 // (hardcoded value of "admin" is only available username for now)
                 if (username == validUsername)
                 {
+                    // First check if failed attempts reached. Password is checked after in case they have been locked out and have the correct password.
                     if (failedAttempts == 3)
                     {
-                        // Compares lockTime with current time. If true, account is no longer locked
+                        // Compares lockTime with current time. If true, account is still locked and return.
+                        // Else continue on to check password
                         if (DateTime.Compare(lockTime, DateTime.Now) > 0)
                         {
-                            //lockTime = DateTime.Now.AddSeconds(30);
                             MessageBox.Show("Account is locked. Please try again later.");
                             return;
-                        }
-                        else
-                        {
-                            // Continue with password. NEED TO FIX
-                            MessageBox.Show("Login confirmed.");
                         }
                     }
                     // Check if the password matches with the username in our records
@@ -70,8 +70,7 @@ namespace LoginScreen
                         // Failed third attempt. Lock the account for
                         if (failedAttempts == 3)
                         {
-                            failedAttempts++;
-                            MessageBox.Show("Invalid login attempt. Account has been locked for 30 seconds.");
+                            MessageBox.Show("Invalid login attempt. Account has been locked for an additional 30 seconds.");
 
                             // Record time 30 seconds into the future for later calculations
                             lockTime = DateTime.Now.AddSeconds(30);

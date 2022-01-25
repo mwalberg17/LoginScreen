@@ -1,4 +1,8 @@
-﻿using System;
+﻿// MainFrm.cs
+// MIS 677
+// 
+// Authors: Matthew Walberg, Alex Anderson, Karl Burg, Rob Kaufman, Mike Hewko
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
