@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LoginScreen
 {
-    public partial class ScheduleFrm : Form
+    public partial class SettingsFrm : Form
     {
-        public ScheduleFrm()
+        public SettingsFrm()
         {
             InitializeComponent();
         }

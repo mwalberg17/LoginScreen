@@ -22,9 +22,40 @@ namespace LoginScreen
             Application.Exit();
         }
 
+        // Settings Button
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+            SettingsFrm settingsFrm = new SettingsFrm();
+            settingsFrm.Show();
+        }
 
+        private void uxExitPicbox_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void uxAccountPicbox_Click(object sender, EventArgs e)
+        {
+            AccountFrm accountFrm = new AccountFrm();
+            accountFrm.Show();
+        }
+
+        private void uxScheduleBtn_Click(object sender, EventArgs e)
+        {
+            ScheduleFrm scheduleFrm = new ScheduleFrm();
+            scheduleFrm.Show();
+        }
+
+        private void uxBuyTicketsBtn_Click(object sender, EventArgs e)
+        {
+            TicketsFrm ticketsFrm = new TicketsFrm();
+            ticketsFrm.Show();
+        }
+
+        private void uxNewsBtn_Click(object sender, EventArgs e)
+        {
+            NewsFrm newFrm = new NewsFrm();
+            newFrm.Show();
         }
     }
 }

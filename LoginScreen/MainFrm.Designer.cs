@@ -51,12 +51,13 @@ namespace LoginScreen
             this.uxNewsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.uxNewsBtn.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uxNewsBtn.Location = new System.Drawing.Point(11, 363);
-            this.uxNewsBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.uxNewsBtn.Margin = new System.Windows.Forms.Padding(2);
             this.uxNewsBtn.Name = "uxNewsBtn";
             this.uxNewsBtn.Size = new System.Drawing.Size(343, 48);
             this.uxNewsBtn.TabIndex = 1;
             this.uxNewsBtn.Text = "K-State News";
             this.uxNewsBtn.UseVisualStyleBackColor = false;
+            this.uxNewsBtn.Click += new System.EventHandler(this.uxNewsBtn_Click);
             // 
             // uxBuyTicketsBtn
             // 
@@ -65,12 +66,13 @@ namespace LoginScreen
             this.uxBuyTicketsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.uxBuyTicketsBtn.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uxBuyTicketsBtn.Location = new System.Drawing.Point(11, 300);
-            this.uxBuyTicketsBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.uxBuyTicketsBtn.Margin = new System.Windows.Forms.Padding(2);
             this.uxBuyTicketsBtn.Name = "uxBuyTicketsBtn";
             this.uxBuyTicketsBtn.Size = new System.Drawing.Size(343, 48);
             this.uxBuyTicketsBtn.TabIndex = 2;
             this.uxBuyTicketsBtn.Text = "Buy K-State Tickets";
             this.uxBuyTicketsBtn.UseVisualStyleBackColor = false;
+            this.uxBuyTicketsBtn.Click += new System.EventHandler(this.uxBuyTicketsBtn_Click);
             // 
             // uxScheduleBtn
             // 
@@ -79,18 +81,19 @@ namespace LoginScreen
             this.uxScheduleBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.uxScheduleBtn.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uxScheduleBtn.Location = new System.Drawing.Point(11, 234);
-            this.uxScheduleBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.uxScheduleBtn.Margin = new System.Windows.Forms.Padding(2);
             this.uxScheduleBtn.Name = "uxScheduleBtn";
             this.uxScheduleBtn.Size = new System.Drawing.Size(343, 48);
             this.uxScheduleBtn.TabIndex = 3;
             this.uxScheduleBtn.Text = "K-State Schedule";
             this.uxScheduleBtn.UseVisualStyleBackColor = false;
+            this.uxScheduleBtn.Click += new System.EventHandler(this.uxScheduleBtn_Click);
             // 
             // uxSettingsPicbox
             // 
             this.uxSettingsPicbox.Image = ((System.Drawing.Image)(resources.GetObject("uxSettingsPicbox.Image")));
             this.uxSettingsPicbox.Location = new System.Drawing.Point(371, 300);
-            this.uxSettingsPicbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.uxSettingsPicbox.Margin = new System.Windows.Forms.Padding(2);
             this.uxSettingsPicbox.Name = "uxSettingsPicbox";
             this.uxSettingsPicbox.Size = new System.Drawing.Size(48, 48);
             this.uxSettingsPicbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -102,12 +105,13 @@ namespace LoginScreen
             // 
             this.uxAccountPicbox.Image = ((System.Drawing.Image)(resources.GetObject("uxAccountPicbox.Image")));
             this.uxAccountPicbox.Location = new System.Drawing.Point(371, 234);
-            this.uxAccountPicbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.uxAccountPicbox.Margin = new System.Windows.Forms.Padding(2);
             this.uxAccountPicbox.Name = "uxAccountPicbox";
             this.uxAccountPicbox.Size = new System.Drawing.Size(48, 48);
             this.uxAccountPicbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.uxAccountPicbox.TabIndex = 6;
             this.uxAccountPicbox.TabStop = false;
+            this.uxAccountPicbox.Click += new System.EventHandler(this.uxAccountPicbox_Click);
             // 
             // uxBannerPicbox
             // 
@@ -128,6 +132,7 @@ namespace LoginScreen
             this.uxExitPicbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.uxExitPicbox.TabIndex = 8;
             this.uxExitPicbox.TabStop = false;
+            this.uxExitPicbox.Click += new System.EventHandler(this.uxExitPicbox_Click);
             // 
             // uxWelcomeLabel
             // 
@@ -153,7 +158,7 @@ namespace LoginScreen
             this.Controls.Add(this.uxScheduleBtn);
             this.Controls.Add(this.uxBuyTicketsBtn);
             this.Controls.Add(this.uxNewsBtn);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MainFrm";
             this.Text = "Home Page";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainFrm_FormClosing);

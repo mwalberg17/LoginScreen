@@ -1,7 +1,7 @@
 ﻿
 namespace LoginScreen
 {
-    partial class ScheduleFrm
+    partial class TicketsFrm
     {
         /// <summary>
         /// Required designer variable.
@@ -35,22 +35,22 @@ namespace LoginScreen
             // uxBackBtn
             // 
             this.uxBackBtn.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxBackBtn.Location = new System.Drawing.Point(423, 359);
+            this.uxBackBtn.Location = new System.Drawing.Point(352, 202);
             this.uxBackBtn.Name = "uxBackBtn";
             this.uxBackBtn.Size = new System.Drawing.Size(96, 46);
-            this.uxBackBtn.TabIndex = 0;
+            this.uxBackBtn.TabIndex = 1;
             this.uxBackBtn.Text = "Back";
             this.uxBackBtn.UseVisualStyleBackColor = true;
             this.uxBackBtn.Click += new System.EventHandler(this.uxBackBtn_Click);
             // 
-            // ScheduleFrm
+            // TicketsFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(553, 450);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.uxBackBtn);
-            this.Name = "ScheduleFrm";
-            this.Text = "ScheduleFrm";
+            this.Name = "TicketsFrm";
+            this.Text = "TicketsFrm";
             this.ResumeLayout(false);
 
         }
