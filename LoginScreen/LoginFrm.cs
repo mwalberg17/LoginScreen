@@ -92,74 +92,12 @@ namespace LoginScreen
 
                     }
 
-
-
-                    /**
-                    else
-                    {
-                        // Check if the password matches with the username in our records
-                        if (password == validPassword)
-                        {
-                            // Reset failedAttempts to 0 & lockTime to null
-                            failedAttempts = 0;
-
-                            // On success, load main form/display it and close the login form
-                            MainFrm frmMain = new MainFrm();
-                            frmMain.Show();
-                            this.Close();
-                        }
-                        // Password is not valid
-                        else
-                        {
-                            // Failed third attempt. Lock the account for
-                            if (failedAttempts >= 2)
-                            {
-                                failedAttempts++;
-                                MessageBox.Show("Maximum attempts reached. Account has been locked for 30 seconds.");
-
-                                // Record time 30 seconds into the future for later calculations
-                                lockTime = DateTime.Now.AddSeconds(30);
-                            }
-                            else
-                            {
-                                failedAttempts++;
-                                MessageBox.Show("Invalid Username and/or Password. Please try again.");
-                            }
-
-                        }
-                    }
-                    **/
                 }
                 // Username does not exist
                 else
                 {
                     MessageBox.Show("Username does not exist.");
                 }
-
-
-                /** if the username and password match the hardcoded values we have chosen for the time being
-                if (username == validUsername && password == validPassword)
-                {
-                    
-                    // Reset 
-
-                    // On success, load main form/display it and close the login form
-                    MainFrm frmMain = new MainFrm();
-                    frmMain.Show();
-                    this.Close();
-                }
-                else
-                {
-                    // On failure, increment failedAttempts
-
-                }**/
-
-
-
-                //SqlCommand usernameCommand = new SqlCommand("SELECT * from Security WHERE ");
-                //// Take in Username and password
-                //// if query results come back
-                //    // 
             }
             catch (Exception ex)
             {
