@@ -35,7 +35,7 @@ namespace LoginScreen
             // uxBackBtn
             // 
             this.uxBackBtn.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxBackBtn.Location = new System.Drawing.Point(352, 202);
+            this.uxBackBtn.Location = new System.Drawing.Point(288, 194);
             this.uxBackBtn.Name = "uxBackBtn";
             this.uxBackBtn.Size = new System.Drawing.Size(96, 46);
             this.uxBackBtn.TabIndex = 1;
@@ -47,7 +47,8 @@ namespace LoginScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(106)))), ((int)(((byte)(230)))));
+            this.ClientSize = new System.Drawing.Size(435, 426);
             this.Controls.Add(this.uxBackBtn);
             this.Name = "AccountFrm";
             this.Text = "AccountFrm";
